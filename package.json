@@ -15,12 +15,18 @@
     "custom-calibration": "node devServer samples/custom-calibration/index.html 8082"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@parcel/core": "^2.13.3"
   },
   "dependencies": {
+    "@parcel/config-default": "^2.13.3",
     "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "open": "^8.2.1",
+    "esm": "^3.2.25",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "http-proxy-middleware": "^3.0.3",
+    "open": "^8.4.2",
+    "path": "^0.12.7",
+    "puppeteer-core": "^24.1.0",
     "seeso": "^0.2.1",
     "wasm-check": "^2.0.1"
   }

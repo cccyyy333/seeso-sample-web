@@ -9,7 +9,13 @@
 <body>
   <canvas id="output" style="position: fixed;"></canvas>
   <h2 id="gazeInfo" style="text-align: center;z-index: -1"></h2>
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
+	<!-- index.js는 import와 export를 사용하므로 type="module" 선언을 해줘야 함-->
+
+  <span id="a">A</span>
+  <span id="b">B</span>
+  <span id="c">C</span>
+  
 </body>
 
 </html>

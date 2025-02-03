@@ -1,6 +1,5 @@
 // helper functions to display gaze information and dot in browser.
 
-
 // show gaze information on screen.
 function showGazeInfoOnDom (gazeInfo) {
   let gazeInfoDiv = document.getElementById("gazeInfo")
@@ -44,5 +43,4 @@ function hideGaze(){
   hideGazeInfoOnDom();
   hideGazeDotOnDom();
 }
-
 export { showGaze, hideGaze }

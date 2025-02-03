@@ -1,11 +1,11 @@
 import 'regenerator-runtime/runtime';
 
 import {showGaze} from "../showGaze";
-
 // min js
 import EasySeeSo from '../../seeso-minjs/easy-seeso';
 
-const licenseKey = 'YOUR_LICENSE_KEY_HERE'; // Issue license key! -> https://console.seeso.io
+import key from '../../config.json';
+const licenseKey = key.licenseKey;
 
 // gaze callback.
 function onGaze(gazeInfo) {

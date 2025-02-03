@@ -2,7 +2,9 @@ import 'regenerator-runtime/runtime';
 import EasySeeSo from 'seeso/easy-seeso';
 import {showGaze} from "../showGaze";
 
-const licenseKey = 'INPUT_YOUR_KEY';
+import key from '../../config.json';
+const licenseKey = key.licenseKey;
+
 
 function onClickCalibrationBtn(){
     const userId = 'YOUR_USER_ID'; // ex) 5e9easf293
