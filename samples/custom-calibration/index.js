@@ -1,6 +1,8 @@
 import 'regenerator-runtime/runtime';
 import EasySeeSo from "seeso/easy-seeso"
 import {showGaze, hideGaze} from "../showGaze";
+import DOMTracker from "../getDOMdata"
+const tracker = new DOMTracker('http://localhost:8082', 'http://127.0.0.1:52273');
 
 import key from '../../config.json';
 const licenseKey = key.licenseKey;
@@ -9,9 +11,12 @@ const dotMaxSize = 10;
 const dotMinSize = 5;
 
 let isCalibrationMode = false;
+let isCollectMode=false;
 let eyeTracker = null;
 let currentX, currentY;
 let calibrationButton;
+
+
 
 function onClickCalibrationBtn() {
   if(!isCalibrationMode){
@@ -32,11 +37,20 @@ function onClickCalibrationBtn() {
 function onGaze(gazeInfo) {
   if(!isCalibrationMode){
       // do something with gaze info.
-      showGaze(gazeInfo)
-      checkGazeInContainer(gazeInfo)
+      if(isCollectMode){
+        tracker.makeDataset(gazeInfo)
+      }
+      else{
+        showGaze(gazeInfo)
+      }
+      //checkGazeInContainer(gazeInfo)
   }else {
       hideGaze()
   }
+
+  
+
+
 }
 
 // calibration callback.
@@ -106,77 +120,58 @@ function hideCalibrationTitle() {
 function showCalibrationTitle() {
   const calibrationTitle = document.getElementById("calibrationTitle");
   calibrationTitle.style.display = "block";
-  showContainers();
+  //showContainers();
+  addDataCollectionButton(); //데이터 수집 버튼
 }
 
 async function main() {
-  if(!calibrationButton) {
-    calibrationButton = document.getElementById('calibrationButton')
-    calibrationButton.addEventListener('click', onClickCalibrationBtn)
+  if (!calibrationButton) {
+    calibrationButton = document.getElementById('calibrationButton');
+    calibrationButton.addEventListener('click', onClickCalibrationBtn);
     calibrationButton.disabled = true;
   }
-  if(!eyeTracker) {
-    eyeTracker = new EasySeeSo()
+
+  if (!eyeTracker) {
+    eyeTracker = new EasySeeSo();
     await eyeTracker.init(licenseKey,
-      async () => {        
-          await eyeTracker.startTracking(onGaze, onDebug)
-          eyeTracker.showImage()
-          if(!eyeTracker.checkMobile()){
-            eyeTracker.setMonitorSize(13); // 14 inch
-            eyeTracker.setFaceDistance(30);
-            eyeTracker.setCameraPosition(window.outerWidth / 2, true);
-          }
-          calibrationButton.disabled = false;
+      async () => {
+        await eyeTracker.startTracking(onGaze, onDebug);
+        eyeTracker.showImage();
+        if (!eyeTracker.checkMobile()) {
+          eyeTracker.setMonitorSize(13); // 14 inch
+          eyeTracker.setFaceDistance(30);
+          eyeTracker.setCameraPosition(window.outerWidth / 2, true);
+        }
+        calibrationButton.disabled = false;
       }, // callback when init succeeded.
       () => console.log("callback when init failed.") // callback when init failed.
-    )
-  }else{
+    );
+  } else {
     calibrationButton.disabled = false;
   }
 }
 
-(async () => {
-  await main();
-})()
+// Add the data collection button
+function addDataCollectionButton() {
+  const dataCollectionButton = document.createElement('button');
+  dataCollectionButton.innerText = 'Start Data Collection';
+  dataCollectionButton.style.position = 'fixed';
+  dataCollectionButton.style.bottom = '20px';
+  dataCollectionButton.style.left = '50%';
+  dataCollectionButton.style.transform = 'translateX(-50%)';
+  document.body.appendChild(dataCollectionButton);
 
-
-function container_init() {
-  contain=document.getElementById("container");
-  contain.style.display = "none";
-  for (let i = 0; i < 3; i++) {
-    const elementId = String.fromCharCode(97 + i); // 'a', 'b', 'c'
-    con[i] = document.getElementById(elementId);
-    con[i].style.backgroundColor = "gray";
-    con[i].style.fontSize = "30px";
-    con[i].style.display = "inline-block"
-    con[i].style.width = "200px";
-    con[i].style.height = "200px";
-    con[i].style.textAlign = "center";
-    con[i].style.lineHeight = "200px"; 
-    con[i].style.margin= "100px"
-  }
-}
-
-function showContainers() {
-  contain.style.display = "block";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  container_init();
-});
-
-function checkGazeInContainer(gazeInfo) {
-  con.forEach((container) => {
-    const rect = container.getBoundingClientRect();
-    if (
-      gazeInfo.x >= rect.left &&
-      gazeInfo.x <= rect.right &&
-      gazeInfo.y >= rect.top &&
-      gazeInfo.y <= rect.bottom
-    ) {
-      container.style.backgroundColor = "green"; // Change color when the gaze is inside
-    } else {
-      container.style.backgroundColor = "gray"; // Revert color when the gaze is outside
-    }
+  // On click, trigger setup_Dom function
+  dataCollectionButton.addEventListener('click', () => {
+    isCollectMode=true;
+    tracker.setupDom(); // Calls the setup_Dom function to initiate the data collection iframe
+    dataCollectionButton.style.display = 'none'; // Hide the button after clicking
   });
 }
+
+(async () => {
+  await main();
+})();
+
+
+

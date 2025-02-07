@@ -26,7 +26,7 @@
     "http-proxy-middleware": "^3.0.3",
     "open": "^8.4.2",
     "path": "^0.12.7",
-    "puppeteer-core": "^24.1.0",
+    "puppeteer": "^24.1.1",
     "seeso": "^0.2.1",
     "wasm-check": "^2.0.1"
   }

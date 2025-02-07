@@ -1,0 +1,583 @@
+[
+  {
+    "timestamp": 1738915448788,
+    "gazeInfo": {
+      "timestamp": 1738915448756,
+      "x": 549,
+      "y": 70,
+      "fixationX": 549,
+      "fixationY": 70,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "h1",
+        "id": "",
+        "class": "",
+        "x": 20,
+        "y": 46.796875,
+        "width": 760,
+        "height": 46
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915448828,
+    "gazeInfo": {
+      "timestamp": 1738915448798,
+      "x": 577,
+      "y": 68,
+      "fixationX": 577,
+      "fixationY": 68,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "h1",
+        "id": "",
+        "class": "",
+        "x": 20,
+        "y": 46.796875,
+        "width": 760,
+        "height": 46
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915448863,
+    "gazeInfo": {
+      "timestamp": 1738915448825,
+      "x": 575,
+      "y": 78,
+      "fixationX": 575,
+      "fixationY": 78,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "h1",
+        "id": "",
+        "class": "",
+        "x": 20,
+        "y": 46.796875,
+        "width": 760,
+        "height": 46
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915448896,
+    "gazeInfo": {
+      "timestamp": 1738915448858,
+      "x": 563,
+      "y": 100,
+      "fixationX": 563,
+      "fixationY": 100,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915448925,
+    "gazeInfo": {
+      "timestamp": 1738915448892,
+      "x": 547,
+      "y": 118,
+      "fixationX": 562,
+      "fixationY": 99,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 0
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915448967,
+    "gazeInfo": {
+      "timestamp": 1738915448933,
+      "x": 523,
+      "y": 140,
+      "fixationX": 523,
+      "fixationY": 140,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915449041,
+    "gazeInfo": {
+      "timestamp": 1738915448978,
+      "x": 493,
+      "y": 153,
+      "fixationX": 493,
+      "fixationY": 153,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915449099,
+    "gazeInfo": {
+      "timestamp": 1738915448998,
+      "x": 481,
+      "y": 158,
+      "fixationX": 481,
+      "fixationY": 158,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915449105,
+    "gazeInfo": {
+      "timestamp": 1738915449067,
+      "x": 461,
+      "y": 170,
+      "fixationX": 461,
+      "fixationY": 170,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 2
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915449353,
+    "gazeInfo": {
+      "timestamp": 1738915449326,
+      "x": 441,
+      "y": 184,
+      "fixationX": 461,
+      "fixationY": 171,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 0
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      },
+      {
+        "tag": "span",
+        "id": "b",
+        "class": "",
+        "x": 350,
+        "y": 152.796875,
+        "width": 100,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "timestamp": 1738915450371,
+    "gazeInfo": {
+      "timestamp": 1738915450328,
+      "x": 433,
+      "y": 191,
+      "fixationX": 433,
+      "fixationY": 191,
+      "leftOpenness": -1,
+      "rightOpenness": -1,
+      "trackingState": 0,
+      "eyemovementState": 3
+    },
+    "matchedElements": [
+      {
+        "tag": "html",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "body",
+        "id": "",
+        "class": "",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "container",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 762.7265625
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "class": "box",
+        "x": 20,
+        "y": 102.796875,
+        "width": 760,
+        "height": 200
+      },
+      {
+        "tag": "span",
+        "id": "b",
+        "class": "",
+        "x": 350,
+        "y": 152.796875,
+        "width": 100,
+        "height": 100
+      }
+    ]
+  }
+]
