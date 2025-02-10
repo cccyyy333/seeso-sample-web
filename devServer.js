@@ -102,8 +102,8 @@ app.post('/gaze', (req, res) => {
         });
     
         // 브라우저 종료
-        await browser.close();
-    
+        await browser.close();    
+        saveDomData(url, domStructure);    
         // DOM 구조를 클라이언트로 반환
         res.json({ success: true, dom: domStructure });
         } catch (error) {
@@ -141,4 +141,20 @@ function saveGazeData(page, data) {
         else console.log(`Gaze data saved to ${filePath}`);
     });
 }
+
+function saveDomData(url, domData) {
+    const dir = path.join(__dirname, 'dom_data');
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+
+    const fileName = url.replace(/[^a-zA-Z0-9]/g, '_') + '.json';
+    const filePath = path.join(dir, fileName);
+
+    fs.writeFile(filePath, JSON.stringify(domData, null, 2), (err) => {
+        if (err) console.error('Error saving DOM data:', err);
+        else console.log(`DOM data saved to ${filePath}`);
+    });
+}
+
 

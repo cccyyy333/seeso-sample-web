@@ -2,7 +2,12 @@ import 'regenerator-runtime/runtime';
 import EasySeeSo from "seeso/easy-seeso"
 import {showGaze, hideGaze} from "../showGaze";
 import DOMTracker from "../getDOMdata"
-const tracker = new DOMTracker('http://localhost:8082', 'http://127.0.0.1:52273');
+const host ='http://localhost:8082';
+const target ='http://www.google.com/';
+//http://127.0.0.1:52273
+const tracker = new DOMTracker(host, target);
+
+
 
 import key from '../../config.json';
 const licenseKey = key.licenseKey;
